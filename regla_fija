@@ -1,0 +1,20 @@
+def clasificar(horas):
+    if horas >= 8:
+        return "Excelente"
+    elif horas >= 5:
+        return "Aprobado"
+    else:
+        return "Reprobado"
+
+# Datos de los estudiantes
+estudiantes = {
+    "Ana": 8,
+    "Luis": 3,
+    "Maria": 10,
+    "Carlos": 5
+}
+
+# Aplicar la regla a cada estudiante
+for nombre, horas in estudiantes.items():
+    resultado = clasificar(horas)
+    print(f"{nombre} estudió {horas} horas -> {resultado}")
